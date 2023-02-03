@@ -23,6 +23,8 @@ public class Cat {
 	private long id;
 	private String name;
 	private String image;
+	
+	public Cat() {}
 
 	public String getName() {
 		return name;
@@ -40,4 +42,17 @@ public class Cat {
 		this.image = image;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	@Override
+	public String toString() {
+		return "Id = " + id + " Name = " + name + " imageSrc = " + image;
+	}
+	
 }

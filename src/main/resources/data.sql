@@ -1,1 +1,1 @@
-INSERT INTO cat (name, image) VALUES ('Orange Tabby', '../cats/otabby.jpeg')
+INSERT INTO cat (id, name, image) VALUES (1, 'Orange Tabby', '../cats/otabby.jpeg')

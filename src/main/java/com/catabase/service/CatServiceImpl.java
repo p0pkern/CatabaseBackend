@@ -15,9 +15,9 @@ public class CatServiceImpl implements CatService{
 	private CatRepository catRepository;
 
 	@Override
-	public void findAll() {
+	public List<Cat> findAll() {
 		List<Cat> cats = catRepository.findAll();
-		cats.stream().forEach(System.out::println);
+		return cats;
 	}
 
 }

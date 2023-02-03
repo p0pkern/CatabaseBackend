@@ -19,7 +19,6 @@ public class CatabaseServer implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		catService.findAll();
 		
 	}
 

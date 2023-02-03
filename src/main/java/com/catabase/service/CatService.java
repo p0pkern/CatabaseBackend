@@ -1,5 +1,9 @@
 package com.catabase.service;
 
+import java.util.List;
+
+import com.catabase.entity.Cat;
+
 public interface CatService {
-	public void findAll();
+	public List<Cat> findAll();
 }

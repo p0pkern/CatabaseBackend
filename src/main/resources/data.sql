@@ -1,0 +1,1 @@
+INSERT INTO cat (name, image) VALUES ('Orange Tabby', '../cats/otabby.jpeg')

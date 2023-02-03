@@ -8,6 +8,15 @@ import jakarta.persistence.SequenceGenerator;
 
 @Entity
 public class Cat {
+	
+	/* 
+	 * This series will update the value of the id in the database by 1
+	 * for every new entry updated.
+	 * 
+	 * This relies on the application.properties configuration of
+	 * spring.jpa.hibernate.ddl-auto=create (or create-drop, or update)
+	 */
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SequenceSubCategoryId")
 	@SequenceGenerator(name = "SequenceSubCategoryId", sequenceName = "SUB_CATEGORY_SEQ")

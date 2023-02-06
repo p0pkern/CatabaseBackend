@@ -1,2 +1,1 @@
-INSERT INTO cat (id, name, image) VALUES (1, 'Orange Tabby', './imgs/otabby.jpeg')
-INSERT INTO cat (id, name, image) VALUES (2, 'Black Cat', './imgs/black.jpg')
+INSERT INTO cat (id, breed, location, breed_type, body_type, coat_type, coat_pattern, image_location) VALUES (1, 'Orange Tabby', 'location is here', 'breed type silly', 'body type fat', 'coat type soft', 'coat pattern stripes', './imgs/otabby.jpeg')

@@ -8,7 +8,7 @@ public class CatDTO {
 	private long id;
 	private String breed;
 	private String location;
-	private String type;
+	private String breedType;
 	private String bodyType;
 	private String coatType;
 	private String coatPattern;
@@ -22,11 +22,19 @@ public class CatDTO {
 		this.id = id;
 		this.breed = breed;
 		this.location = location;
-		this.type = type;
+		this.breedType = type;
 		this.bodyType = bodyType;
 		this.coatType = coatType;
 		this.coatPattern = coatPattern;
 		this.imageLocation = imageLocation;
+	}
+	
+	public String getBreedType() {
+		return breedType;
+	}
+
+	public void setBreedType(String breedType) {
+		this.breedType = breedType;
 	}
 
 	public long getId() {
@@ -51,14 +59,6 @@ public class CatDTO {
 
 	public void setLocation(String location) {
 		this.location = location;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 
 	public String getBodyType() {
@@ -112,7 +112,7 @@ public class CatDTO {
 
 	@Override
 	public String toString() {
-		return "Cat [id=" + id + ", breed=" + breed + ", location=" + location + ", type=" + type + ", bodyType="
+		return "Cat [id=" + id + ", breed=" + breed + ", location=" + location + ", type=" + breedType + ", bodyType="
 				+ bodyType + ", coatType=" + coatType + ", coatPattern=" + coatPattern + ", imageLocation="
 				+ imageLocation + "]";
 	}
@@ -125,7 +125,7 @@ public class CatDTO {
 		cat.setCoatPattern(catDTO.getCoatPattern());
 		cat.setCoatType(catDTO.getCoatType());
 		cat.setLocation(catDTO.getLocation());
-		cat.setType(catDTO.getLocation());
+		cat.setBreedType(catDTO.getBreedType());
 		cat.setImageLocation(catDTO.getImageLocation());
 		
 		return cat;
